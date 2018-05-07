@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+spawn sh /root/SDH3.1/sdhpkg/sugon/install_sdh.sh
+expect "*Warnning: Are you sure to install XData service*"
+send "y\r"
+expect "*Do you have a MySQL5.6+ DB installed*"
+send "y\r"
+interact

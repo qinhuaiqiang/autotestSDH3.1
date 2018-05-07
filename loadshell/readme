@@ -1,0 +1,7 @@
+该文件夹下有五个shell脚本文件。
+它们都将被上传到远程的Linux机上执行。
+preEnvSet.sh是会被上传到集群中的每台linux机上，它是用来修改Linux机的域名，以及配置映射文件。
+untar.sh会被上传到主节点Linux机上，它是用来解压安装包和修改安装包中的配置文件，以及执行安装脚本。
+install.exp实现SDH3.1安装脚本的免交互执行
+testMR.sh会被上传到主节点的Linux机上，它是用来实现MR程序的自动化测试。
+uninstall.exp实现SDH3.1卸载脚本的免交互执行。

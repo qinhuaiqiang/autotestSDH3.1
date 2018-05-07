@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestClass">
+    <test name="TestDemo">
+        <parameter name="ip01" value="172.16.0.72" />
+        <parameter name="loginURL" value="http://172.16.0.72:8080" />
+        <parameter name="masterIpLastByte" value="72" />
+        <parameter name="ip02" value="172.16.0.75" />
+        <parameter name="slave01IpLastByte" value="75" />
+        <parameter name="ip03" value="172.16.0.90" />
+        <parameter name="slave02IpLastByte" value="90" />
+        <parameter name="passWord" value="Sugon123" />
+        <parameter name="desFile" value="MRTest" />
+        <parameter name="localFilePath" value="D:/mydata" />
+        <classes>
+            <class name="TestClass"/>
+        </classes>
+    </test>
+</suite>

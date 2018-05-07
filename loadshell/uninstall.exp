@@ -1,0 +1,7 @@
+#!/usr/bin/expect  -f
+spawn sh /root/SDH3.1/sdhpkg/sugon/rmSDH.sh
+expect "*Warnning: Are you sure to delete the XData SDH service and all hadoop clusters*"
+send "y\r"
+expect "*Warnning: Do you want to delete the MySQL database*"
+send "y\r"
+interact

@@ -1,0 +1,6 @@
+该文件夹下总共有4个Java类。
+Shell实现了一些Java操作远程Linux机的常用方法。
+PreEnvSet实现Linux环境配置脚本的上传和执行。
+WebConf实现SDH3.1web引导页面的自动化配置。
+TestMR实现HDFS和MR的自动测试。
+uninstall实现SDH3.1的卸载
