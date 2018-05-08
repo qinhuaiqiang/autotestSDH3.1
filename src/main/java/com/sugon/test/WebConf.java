@@ -4,7 +4,8 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -241,7 +242,13 @@ public class WebConf {
         return element;
     }
 
-
+public WebDriver openLogin(String loginURL)
+{
+    WebDriver driver=new FirefoxDriver();
+    driver.get(loginURL);
+    return driver;
+}
+    /*
     public  WebDriver openLogin(String loginURL)
     {
         //创建一个用于打开浏览器的驱动
@@ -250,6 +257,7 @@ public class WebConf {
         driver.get(loginURL);
         return driver;
     }
+    */
     public  void  downId_rsa(String hostIp,String hostPasswd) throws JSchException, SftpException {
         Shell shell=new Shell();
         Session session=shell.connectHost(hostIp,hostPasswd);
