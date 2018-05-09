@@ -3,15 +3,9 @@
 <suite name="TestClass">
     <test name="TestDemo">
         <parameter name="ip01" value="${ip01}" />
-        <parameter name="loginURL" value="${loginURL}" />
-        <parameter name="masterIpLastByte" value="${masterIpLastByte}" />
         <parameter name="ip02" value="${ip02}" />
-        <parameter name="slave01IpLastByte" value="${slave01IpLastByte}" />
         <parameter name="ip03" value="${ip03}" />
-        <parameter name="slave02IpLastByte" value="${slave02IpLastByte}" />
         <parameter name="passWord" value="${passWord}" />
-        <parameter name="desFile" value="${desFile}" />
-        <parameter name="localFilePath" value="${localFilePath}" />
         <classes>
             <class name="TestClass"/>
         </classes>
