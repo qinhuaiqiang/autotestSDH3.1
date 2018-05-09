@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class TestClass01 {
+    /*
     @Test(priority = 0)
     @Parameters({"ip01","passWord"})
     public void install(String ip01,String passWord) throws JSchException, SftpException, IOException, InterruptedException {
@@ -19,7 +20,8 @@ public class TestClass01 {
         Thread.sleep(30000);
         System.out.println("SDH3.1启动成功");
     }
-    @Test(priority = 1)
+    */
+    @Test(priority = 0)
     @Parameters({"loginURL","ip01","passWord","masterIpLastByte","slave01IpLastByte","slave02IpLastByte"})
     public void  conWebPag(String loginURL,String ip01,String passWord,String masterIpLastByte,String slave01IpLastByte,String slave02IpLastByte) throws SftpException, JSchException, InterruptedException {
         WebConf conf=new WebConf();
