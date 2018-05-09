@@ -20,5 +20,14 @@ public class TestClass {
         Thread.sleep(60000);
         System.out.println("等待结束");
     }
+      @Test(priority = 1)
+     @Parameters({"ip01","passWord"})
+    public void install(String ip01,String passWord) throws JSchException, SftpException, IOException, InterruptedException {
+        Install ins=new Install();
+        ins.install(ip01,passWord);
+        System.out.println("等待30s的时间,等待SDH3.1启动");
+        Thread.sleep(30000);
+        System.out.println("SDH3.1启动成功");
+    }
 
  }
