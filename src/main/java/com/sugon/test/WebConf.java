@@ -4,8 +4,8 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 import org.openqa.selenium.*;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,7 +19,7 @@ public class WebConf {
     public static void main(String[] args) throws InterruptedException, SftpException, JSchException {
         WebConf conf=new WebConf();
         //创建与web网页的连接
-          WebDriver driver=conf.openLogin("http://172.16.0.72:8080");
+        WebDriver driver=conf.openLogin("http://172.16.0.72:8080");
         //下载id_rsa文件
         String src="D:/id_rsa";
         File file=new File(src);
@@ -241,14 +241,15 @@ public class WebConf {
         element.clear();
         return element;
     }
-
+/*
 public WebDriver openLogin(String loginURL)
 {
     WebDriver driver=new FirefoxDriver();
     driver.get(loginURL);
     return driver;
 }
-    /*
+*/
+   
     public  WebDriver openLogin(String loginURL)
     {
         //创建一个用于打开浏览器的驱动
@@ -257,12 +258,9 @@ public WebDriver openLogin(String loginURL)
         driver.get(loginURL);
         return driver;
     }
-    */
     public  void  downId_rsa(String hostIp,String hostPasswd) throws JSchException, SftpException {
         Shell shell=new Shell();
         Session session=shell.connectHost(hostIp,hostPasswd);
         shell.download(session,"/root/.ssh/id_rsa","D:/");
     }
-
-
 }
