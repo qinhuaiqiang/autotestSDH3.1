@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestClass">
     <test name="TestDemo">
-        <parameter name="ip01" value="172.16.0.72" />
-        <parameter name="loginURL" value="http://172.16.0.72:8080" />
-        <parameter name="masterIpLastByte" value="72" />
-        <parameter name="slave01IpLastByte" value="75" />
-        <parameter name="slave02IpLastByte" value="90" />
-        <parameter name="passWord" value="Sugon123" />
+        <parameter name="ip01" value="${ip01}" />
+        <parameter name="loginURL" value="${loginURL}" />
+        <parameter name="masterIpLastByte" value="${masterIpLastByte}" />
+        <parameter name="slave01IpLastByte" value="${slave01IpLastByte}" />
+        <parameter name="slave02IpLastByte" value="${slave02IpLastByte}" />
+        <parameter name="passWord" value="${passWord}" />
         <classes>
             <class name="TestClass01"/>
         </classes>
