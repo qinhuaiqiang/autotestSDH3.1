@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestClass">
     <test name="TestDemo">
-        <parameter name="ip01" value="172.16.0.72" />
-        <parameter name="passWord" value="Sugon123" />
-        <parameter name="desFile" value="MRTest" />
-        <parameter name="localFilePath" value="D:/mydata" />
+        <parameter name="ip01" value="${ip01}" />
+        <parameter name="passWord" value="${passWord}" />
+        <parameter name="desFile" value="${desFile}" />
+        <parameter name="localFilePath" value="${localFilePath}" />
         <classes>
             <class name="TestClass02"/>
         </classes>
