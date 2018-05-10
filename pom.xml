@@ -50,7 +50,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>/root/.jenkins/workspace/AutoTestSDH3.1/src/test/java/${TestFile}</suiteXmlFile>
+                        <suiteXmlFile>${TestFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
                 <version>2.4</version>
