@@ -53,6 +53,11 @@
                         <suiteXmlFile>${TestFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
+                     
+                  <configuration>
+                <testFailureIgnore>true</testFailureIgnore>
+                 </configuration>
+                     
                 <version>2.4</version>
             </plugin>
 
