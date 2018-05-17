@@ -17,7 +17,7 @@ public class TestClass {
         PreEnvSet pre=new PreEnvSet();
         pre.uploadAndExc(ip01,ip02,ip03,passWord);
         System.out.println("这里要等待大约1分钟的时间，等Linux机重启成功");
-        Thread.sleep(60000);
+        Thread.sleep(100000);
         System.out.println("等待结束");
     }
       @Test(priority = 1)
